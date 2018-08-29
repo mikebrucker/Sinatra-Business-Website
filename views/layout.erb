@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel Nowhere</title>
+    <link rel='stylesheet' href='/css/reset.css'>
+    <link rel='stylesheet' href='/css/main.css'>
+</head>
+<body>
+    <nav id='header'>
+        <div class='header'>Nowhere Travel Agency</div>
+
+        <% nav =["<a href='/'><div class='nav'>Home</div></a>", "<a href='/about'><div class='nav'>About</div></a>", "<a href='/destinations'><div class='nav'>Destinations</div></a>", "<a href='/contact'><div class='nav'>Contact</div></a>"]%>
+
+        <% nav.each do |nav| %><%= nav %><% end %>
+    </nav>
+
+    <div id='container'>
+        <%= yield %>
+    </div>
+    
+    <footer>
+        <p class='italic'>Travel Nowhere with Nowhere Travel Agency</p>
+        <p>&copy; Copyright 1988 Nowhere Travel Agency&trade;</p>
+    </footer>
+
+</body>
+</html>

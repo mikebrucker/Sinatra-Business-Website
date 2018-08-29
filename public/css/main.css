@@ -1,0 +1,306 @@
+body {
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, #aboutimage, #homeimage, .nav {
+    background-color: rgb(254, 212, 154);
+}
+
+#container {
+    min-height: 300px;
+    margin: 180px auto 88px;
+    font-size: 0;
+}
+
+.header, .nav:hover, footer, .destination, #submit {
+    background-color: deepskyblue;
+}
+
+.nav {
+    width: 25%;
+    font-size: 32px;
+    padding: 10px 0;
+}
+.nav, .destinationContainer, .inquire, .centerButton, input, label, .homeContainer {
+    display: inline-block;
+}
+
+#header, .header, footer, #modal, .object-cover, .modal_img, .centerButton {
+    width: 100%;
+}
+
+body, .nav, #submit {
+    color: white;
+}
+
+.header {
+    padding: 24px 0;
+    font-size: 80px;
+}
+
+.header, .close {
+    cursor: pointer;
+}
+
+#header, footer, #modal {
+    position: fixed;
+}
+
+#header {
+    z-index: 1;
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+    padding: 16px 0;
+}
+
+.nav, .header, footer, .centerButton {
+    text-align: center;
+}
+
+.italic {
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+#homeimage {
+    background: url('../images/beach.jpg') no-repeat center top;
+    height: 700px;
+}
+
+#aboutimage, .homeContainer, form, footer {
+    font-size: 24px;
+}
+
+.font20p {
+    font-size: 20px;
+}
+
+#aboutimage {
+    background: url('../images/paris.jpg') no-repeat center top;
+    background-size: 1600px;
+    height: 795px;
+}
+
+.destinationContainer {
+    width: 33%;
+    height: 380px;
+    font-size: 20px;
+    vertical-align: bottom;
+}
+
+.homeContainer {
+    position: relative;
+    top: 10px;
+    width: 50%;
+    height: 500px;
+}
+
+.destination {
+    margin: 0 auto;
+    width: 95%;
+    height: 90%;
+    box-shadow: 10px 10px 20px rgba(0, 191, 255, 0.5);
+}
+
+.destination, .inquire {
+    box-sizing: border-box;
+}
+
+.destination, .modal, .inquire, form, #submit {
+    border-radius: 8px;
+}
+
+.destination p {
+    margin: 10px;
+}
+
+.city, .info {
+    margin: 16px;
+}
+
+.object-cover, .modal_img {
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+}
+
+.object-cover {
+    height: 200px;
+}
+
+.modal_img {
+    height: 360px;
+}
+
+#modal {
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: none;
+    background-color: rgb(254, 212, 154, 0.7);
+    font-size: 32px;
+    z-index: 2;
+    overflow: auto;
+}
+
+.modal {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    width: 70%;
+    height: 720px;
+    background-color: rgba(0, 191, 255, 0.7);
+}
+
+.city {
+    font-size: 44px;
+}
+
+.close {
+    position: absolute;
+    top: 14px;
+    right: 20px;
+}
+
+.close:active {
+    color: black;
+}
+
+.inquire, form {
+    margin: 10px auto;
+    padding: 20px;
+    background-color: rgb(0, 76, 102);
+    box-shadow: 10px 10px 20px rgba(0, 76, 102, 0.8);
+}
+
+.inquire:active, .destination:active {
+    position: relative;
+    top: 4px;
+    left: 4px;
+    box-shadow: none;
+}
+
+form {
+    width: 40%;
+    text-align: left;
+}
+
+input, textarea, label, #submit {
+    margin: 6px auto;
+}
+
+input, textarea {
+    float: right;
+    width: 60%;
+}
+
+input {
+    height: 18px;
+}
+
+textarea {
+    width: 98.5%;
+}
+
+#submit {
+    float: none;
+    font-size: 30px;
+    border: 2px outset white;
+}
+
+.block {
+    display: block;
+}
+
+@media all and (max-width: 992px) {
+    .header {
+        padding: 16px 0;
+        font-size: 56px;
+    }
+
+    .nav {
+        font-size: 26px;
+    }
+
+    #container {
+        min-height: 300px;
+        margin: 134px auto 88px;
+    }
+
+    .destinationContainer {
+        width: 50%;
+    }
+
+    .modal {
+        width: 80%;
+        transform: translateY(0);
+        top: 60px;
+        margin-bottom: 60px;
+    }
+
+    form {
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .header {
+        font-size: 44px;
+    }
+    
+    .nav, footer {
+        font-size: 20px;
+    }
+    
+    #container {
+        min-height: 300px;
+        margin: 116px auto 80px;
+    }
+    
+    .destinationContainer {
+        width: 100%;
+    }
+
+    .modal {
+        width: 90%;
+        top: 40px;
+        margin-bottom: 40px;
+    }
+
+    form {
+        width: 60%;
+    }
+}
+
+@media all and (max-width: 536px) {
+    .header, footer {
+        padding: 12px 0;
+    }
+    
+    .header {
+        font-size: 28px;
+    }
+    
+    .nav, footer {
+        font-size: 16px;
+    }
+    
+    #container {
+        min-height: 300px;
+        margin: 88px auto 64px;
+    }
+
+    .modal {
+        width: 95%;
+        top: 20px;
+        margin-bottom: 20px;
+    }
+
+    form {
+        width: 80%;
+    }
+}
