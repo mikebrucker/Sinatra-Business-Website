@@ -25,7 +25,7 @@ post '/contact' do
     @destination = params[:destination]
     @textarea = params[:textarea]
     m = Sendinblue::Mailin.new("https://api.sendinblue.com/v2.0",ENV['SENDINBLUE_API_KEY'],5)	#Optional parameter: Timeout in Secs
-    data = { "to" => {"disposition11@gmail.com"=>"Nowhere Travel Agency"},
+    data = { "to" => {"myEmail@myEmail.com"=>"Nowhere Travel Agency"},
         "from" => [@email,"from #{@name}!"],
         "subject" => @destination,
         "text" => "#{@name} is inquiring about #{@destination}: #{@textarea}"
